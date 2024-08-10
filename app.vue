@@ -1,9 +1,21 @@
 <template>
-  <div>
-    <button @click="toggleColorMode" class="p-4 float-right">
-      <Icon v-if="$colorMode.preference ==='dark'" name="ion:android-sunny" class="text-white text-2xl" />
-      <Icon v-else name="ion:moon-sharp"  class="text-blak text-2xl"/>
-    </button>
+  <div class="min-h-screen flex flex-col justify-center">
+    <div class="text-right p-4">
+      <button
+        @click="toggleColorMode"
+      >
+        <Icon
+          v-if="$colorMode.preference ==='dark'"
+          name="ion:android-sunny"
+          class="text-white text-2xl"
+        />
+        <Icon
+          v-else
+          name="ion:moon-sharp"
+          class="text-blak text-2xl"
+        />
+      </button>
+    </div>
     <NuxtPage />
   </div>
 </template>
