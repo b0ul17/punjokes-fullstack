@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col justify-center">
+  <div class="h-dvh">
     <div class="text-right p-4">
       <button
         @click="toggleColorMode"
@@ -16,7 +16,9 @@
         />
       </button>
     </div>
-    <NuxtPage />
+    <div class="flex flex-col justify-center h-5/6">
+      <NuxtPage />
+    </div>
   </div>
 </template>
 
